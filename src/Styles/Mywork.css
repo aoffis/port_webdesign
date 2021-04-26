@@ -1,0 +1,31 @@
+.container {
+  margin-top: 3vh;
+}
+.carousel {
+  position: relative;
+  padding: 0em 5em 2em 5em;
+}
+
+.card {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.carousel-indicators li {
+  background-color: #212121;
+}
+
+a.carousel-control-next,
+a.carousel-control-prev {
+  top: 46%;
+  width: 4%;
+  height: 6%;
+  background-color: black;
+  border-radius: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    position: relative;
+    padding: 0em 1em 4em 1em;
+  }
+}

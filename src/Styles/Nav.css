@@ -1,0 +1,84 @@
+.blacknav {
+  background-color: #212121;
+  padding: 1em 1em;
+}
+
+.nav-link {
+  color: white;
+  padding: 0rem 0rem !important;
+}
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
+}
+.title {
+  color: white !important;
+  margin: 0.2em;
+  font-size: 2em;
+  text-align: center;
+}
+.text {
+  color: white;
+  margin: 0.2em;
+  font-size: 1em;
+}
+
+ul {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li {
+  display: table-cell;
+  position: relative;
+}
+.a {
+  color: #fff;
+  text-transform: uppercase !important;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.a:hover {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 576px) {
+  .blog {
+    padding-right: 4em;
+  }
+  .a {
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+  }
+  .port {
+    padding-right: 2em;
+  }
+}
