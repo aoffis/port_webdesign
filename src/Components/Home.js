@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { motion, AnimateSharedLayout } from "framer-motion";
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import React from "react";
 import { Container } from "react-bootstrap";
@@ -31,7 +31,13 @@ function Home() {
   const [selected, setSelected] = useState(0);
   return (
     <>
-      <Container className="containerhome">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="containerhome"
+      >
         <AnimateSharedLayout>
           <ol style={{ transform: "translateZ(0)" }}>
             {screens.map(({ titlehome, color }, i) => (
@@ -54,7 +60,7 @@ function Home() {
             ))}
           </ol>
         </AnimateSharedLayout>
-      </Container>
+      </motion.div>
     </>
   );
 }

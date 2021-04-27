@@ -23,14 +23,14 @@ ol {
 
 .titlehome {
   transition: 0.5s;
-  font-size: 32px;
+  font-size: 50px;
   margin-left: 20px;
   position: relative;
   cursor: pointer;
 }
 
 .titlehome.selected {
-  font-size: 64px;
+  font-size: 100px;
 }
 
 .underline {
@@ -43,26 +43,36 @@ ol {
 }
 
 .containerhome {
-  margin-top: 28vh !important;
-  margin-bottom: 37vh;
+  padding-top: 250px;
+  min-height: 85vh;
 }
 
 @media screen and (max-width: 1200px) {
   .containerhome {
-    margin-top: 30vh !important;
-    margin-bottom: 40vh;
+    padding-top: 400px;
+    min-height: 80vh;
   }
 }
 @media screen and (max-width: 992px) {
   .containerhome {
-    margin-top: 26vh !important;
-    margin-bottom: 34vh;
+    padding-top: 300px;
+    min-height: 80vh;
+  }
+  .titlehome {
+    transition: 0.5s;
+    font-size: 32px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .titlehome.selected {
+    font-size: 64px;
   }
 }
 @media screen and (max-width: 576px) {
   .containerhome {
-    margin-top: 26vh !important;
-    margin-bottom: 34vh;
+    padding-top: 225px;
+    min-height: 80vh;
   }
   .titlehome {
     transition: 0.5s;

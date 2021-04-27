@@ -10,11 +10,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 function Mywork() {
   return (
     <>
-      <Container class="container">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="container"
+      >
         <Carousel>
           <Carousel.Item>
             <Row>
@@ -237,7 +244,7 @@ function Mywork() {
             </Row>
           </Carousel.Item>
         </Carousel>
-      </Container>
+      </motion.div>
     </>
   );
 }

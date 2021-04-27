@@ -12,6 +12,7 @@
 .containerabout {
   margin-bottom: 2vh;
   margin-top: 2vh;
+  min-height: 85vh;
 }
 
 .card-body {
