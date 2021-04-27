@@ -1,71 +1,49 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
+import "../Styles/Aboutme.css";
+import image from "../img/image.png";
 
 function Aboutme() {
   return (
     <>
-      <Row>
-        <Col xl={3}></Col>
-        <Col xl={3}>
-          <Card>
-            <Card.Img src="holder.js/100px180" />
-
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={3}>
-          <Card>
-            <Card.Img src="holder.js/100px180" />
-
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
-        <Col xl={3}></Col>
-        <Col xl={3}>
-          <Card>
-            <Card.Img src="holder.js/100px180" />
-
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col xl={3}>
-          <Card>
-            <Card.Img src="holder.js/100px180" />
-
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+      <Container>
+        <Row>
+          <Col xl={3}></Col>
+          <Col xl={6}>
+            <Card>
+              <Card.Body>
+                <Card.Img
+                  className="rounded-circle mx-auto d-block profile mb-3"
+                  variant="top"
+                  src={image}
+                />
+                <Card.Title>
+                  <center>ABOUT ME</center>
+                </Card.Title>
+                <Card.Text className="text-center">
+                  <p>ชื่อ ณัฐพงศ์ สายนาค ชื่อเล่น อ๊อฟ</p>
+                  <p>วันเกิด 16 ธันวาคม 2543 อายุ 20 ปี</p>
+                  <p>งานอดิเรก เล่นเกม ดูหนัง เล่นดนตรี</p>
+                  <p>อาชีพที่สนใจ Front End Developer</p>
+                </Card.Text>
+                <Card.Title>
+                  <center>EDUCATION</center>
+                </Card.Title>
+                <Card.Text className="text-center">
+                  <p>King Mongkut's Institute of Technology Ladkrabang</p>
+                  <p>Information Technology | 2018 - Present</p>
+                </Card.Text>
+                <Card.Title>
+                  <center>SKILL</center>
+                </Card.Title>
+                <Card.Text className="text-center">
+                  <p>HTML | Css | Javascript | React | Bootstrap</p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
