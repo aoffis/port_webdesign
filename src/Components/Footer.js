@@ -1,10 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/Footer.css";
-import {
-  faHome,
-  faAddressBook,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHome, faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {

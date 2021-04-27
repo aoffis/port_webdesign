@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../Styles/Aboutme.css";
 import image from "../img/image.png";
 
@@ -12,10 +13,10 @@ function Aboutme() {
           <Col xl={6}>
             <Card>
               <Card.Body>
-                <Card.Img
+                <LazyLoadImage
                   className="rounded-circle mx-auto d-block profile mb-3"
-                  variant="top"
                   src={image}
+                  effect="blur"
                 />
                 <Card.Title>
                   <center>ABOUT ME</center>

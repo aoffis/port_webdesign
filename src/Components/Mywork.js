@@ -7,8 +7,7 @@ import img3 from "../img/manut.png";
 import img4 from "../img/unknown.png";
 import img5 from "../img/black.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import Aboutme from "./Aboutme";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
 
 function Mywork() {
@@ -20,7 +19,11 @@ function Mywork() {
             <Row>
               <Col xl={5} md={12} class="card">
                 <Card>
-                  <Card.Img variant="top" src={img1} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img1}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>Khaoyai Through Time</Card.Title>
@@ -41,7 +44,11 @@ function Mywork() {
               <Col xl={2} md={0}></Col>
               <Col xl={5} md={12} class="card">
                 <Card>
-                  <Card.Img src={img2} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img2}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>SpaceX</Card.Title>
@@ -64,7 +71,11 @@ function Mywork() {
             <Row>
               <Col xl={5} md={12} class="card">
                 <Card>
-                  <Card.Img src={img3} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img3}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>How to human begin</Card.Title>
@@ -85,7 +96,11 @@ function Mywork() {
               <Col xl={2} sm={2}></Col>
               <Col xl={5} sm={12} class="card">
                 <Card>
-                  <Card.Img src={img4} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img4}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>Landscape</Card.Title>
@@ -111,7 +126,11 @@ function Mywork() {
             <Row>
               <Col xl={5} md={12} class="card">
                 <Card>
-                  <Card.Img variant="top" src={img5} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img5}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
@@ -134,7 +153,11 @@ function Mywork() {
               <Col xl={2} md={0}></Col>
               <Col xl={5} md={12} class="card">
                 <Card>
-                  <Card.Img src={img5} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img5}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
@@ -159,7 +182,11 @@ function Mywork() {
             <Row>
               <Col xl={5} md={12} class="card">
                 <Card>
-                  <Card.Img src={img5} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img5}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
@@ -182,7 +209,11 @@ function Mywork() {
               <Col xl={2} sm={2}></Col>
               <Col xl={5} sm={12} class="card">
                 <Card>
-                  <Card.Img src={img5} />
+                  <LazyLoadImage
+                    className="card-img-top"
+                    src={img5}
+                    effect="blur"
+                  />
 
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>

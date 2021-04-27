@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import Footer from "./Components/Footer";
-import Nav_2 from "./Components/Nav_2";
+import Nav from "./Components/Nav_2";
 import Home from "./Components/Home";
 import Mywork from "./Components/Mywork";
 import React from "react";
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Router>
-        <Nav_2 />
+        <Nav />
         <Switch>
           <Route path="/mywork">
             <Mywork />

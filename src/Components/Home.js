@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { useState } from "react";
 import React from "react";
-import { Row, Col, Nav, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "../Styles/Home.css";
 
 function Home() {
