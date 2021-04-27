@@ -8,24 +8,24 @@ import "../Styles/Home.css";
 function Home() {
   const screens = [
     {
-      titlehome: "One",
+      titlehome: "HI !",
       color: "#ff0055",
     },
     {
-      titlehome: "Two",
+      titlehome: "THIS",
       color: "#0099ff",
     },
     {
-      titlehome: "Threeeee",
+      titlehome: "IS",
       color: "#22cc88",
     },
     {
-      titlehome: "Four",
+      titlehome: "MY",
       color: "#ffaa00",
     },
     {
-      titlehome: "Five",
-      color: "#ffaa00",
+      titlehome: "PORTFOLIO",
+      color: "#ff00ff",
     },
   ];
   const [selected, setSelected] = useState(0);

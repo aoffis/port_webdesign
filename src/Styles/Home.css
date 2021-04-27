@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
 body {
   background-image: url(../img/geometry2.png);
+  font-family: "Kanit", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -40,6 +43,35 @@ ol {
 }
 
 .containerhome {
-  padding-top: 26vh !important;
-  padding-bottom: 33vh;
+  margin-top: 28vh !important;
+  margin-bottom: 37vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerhome {
+    margin-top: 30vh !important;
+    margin-bottom: 40vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  .containerhome {
+    margin-top: 26vh !important;
+    margin-bottom: 34vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerhome {
+    margin-top: 26vh !important;
+    margin-bottom: 34vh;
+  }
+  .titlehome {
+    transition: 0.5s;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .titlehome.selected {
+    font-size: 38px;
+  }
 }
