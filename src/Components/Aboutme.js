@@ -6,7 +6,7 @@ import image from "../img/image.png";
 function Aboutme() {
   return (
     <>
-      <Container>
+      <Container className="containerabout">
         <Row>
           <Col xl={3}></Col>
           <Col xl={6}>

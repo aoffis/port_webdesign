@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
 import Nav_2 from "./Components/Nav_2";
 import Home from "./Components/Home";
 import Mywork from "./Components/Mywork";
@@ -24,6 +24,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );
