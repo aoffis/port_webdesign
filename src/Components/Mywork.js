@@ -8,6 +8,7 @@ import img4 from "../img/unknown.png";
 import img5 from "../img/black.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
 
 function Mywork() {
